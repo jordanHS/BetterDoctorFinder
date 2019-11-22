@@ -7,18 +7,19 @@ import { LookupService } from './lookup-service';
 $(document).ready(function() {
   $('#findDoctors').click(function() {
     const firstName = $('#firstName').val();
-    const lastName = $("lastname").val();   
-        $('#doctors').val("");
+    const lastName = $("#lastname").val();   
+        $('#firstName').val("");
+        $("lastName").val("");
 
     (async () => {
       let lookupService = new LookupService();
-      const response = await lookupService.getDoctorByName(lastName);
+      const response = await lookupService.getDoctorByName(firstName, lastName);
       getElements(response);
       
     })();
 
   const getElements = function(response) {
-      $('.showDoctors').text(`Found these doctors matching the name ${firstName + lastName} is ${response.practices.name}`);
+      $('.showDoctors').text(`Found these doctors matching the name ${firstName + lastName} is ${response.practices.name[0]}`);
     }
   });
 });
