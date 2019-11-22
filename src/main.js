@@ -7,7 +7,7 @@ import { LookupService } from './lookup-service';
 $(document).ready(function() {
   $('#findDoctors').click(function() {
     const firstName = $('#firstName').val();
-    const lastName = $("#lastname").val();   
+    const lastName = $("#lastName").val();   
         $('#firstName').val("");
         $("lastName").val("");
 
@@ -19,7 +19,8 @@ $(document).ready(function() {
     })();
 
   const getElements = function(response) {
-      $('.showDoctors').text(`Found these doctors matching the name ${firstName + lastName} is ${response.practices.name[0]}`);
+      $('.showDoctors').text(`Found these doctors matching these doctors with the first name ${firstName} and last name ${lastName}: ${response.data[0].profile.bio}`);
+    console.log(response.data[0].profile);
     }
   });
 });
