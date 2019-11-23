@@ -12,10 +12,7 @@ An application for looking up information on doctors in your area.
 
 | Input | Expected output |
 | ------ | ------ |
-| Doctor First Name, Last Name & Medical Query| * Office Address, 
-* Phone Number, 
-* Website &
-* New patients|
+| Doctor First Name, Last Name & Medical Query| * Office Address, Phone Number, Website & New patients|
 
 
 
@@ -31,7 +28,7 @@ An application for looking up information on doctors in your area.
 
 ## Known Bugs
 
-Incomplete- need to add functionality for search query"
+Incomplete- need to add functionality for search query & other doctor info.
 
 ## Support and contact details
 
