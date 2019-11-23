@@ -26,12 +26,12 @@ An application for looking up information on doctors in your area.
 * Clone repo to desktop
 * Install node
 * Create .env file and store API key
-* Build node
+* Build webpack
 * Use npm start to open live site from command line
 
 ## Known Bugs
 
-Incomplete- need to add functionality for search query.
+Incomplete- need to add functionality for search query"
 
 ## Support and contact details
 
