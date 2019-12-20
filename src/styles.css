@@ -1,7 +1,7 @@
-/* .result {
-  display: none;
+.btn-success {
+  margin-top: 10px;
 }
 
-body {
-  background-color: red;
-} */
+label {
+  margin-top: 10px;
+}
